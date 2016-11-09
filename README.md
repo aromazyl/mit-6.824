@@ -4,6 +4,7 @@
 
 ### Goal
 实现一个Distributed MapReduce框架，该框架实现流程为:
+
 1. 用户提供一些输入文件, map和reduce函数，以及reduce任务个数
 2. Master节点启动rpc服务，等待worker节点register。Master通过调用schedule函数来安排map task给
 注册过的worker节点。
